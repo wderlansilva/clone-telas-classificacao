@@ -1,0 +1,139 @@
+mat-accordion, mat-expansion-panel-header , mat-expansion-panel{
+  background-color: var(--color-bg);
+}
+
+mat-panel-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+mat-panel-title p{
+  font-weight: 600;
+  margin: 0;
+  background-color: var(--color-bg);
+}
+
+.content {
+  margin-top: 1rem;
+  padding: 0.2rem 0.6rem;
+  background-color: var(--color-bg);
+}
+
+.titulo {
+  background-color: var(--color-bg);
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+.titulo p {
+  font-weight: 600;
+  margin: 0;
+  color: var(--font-color);
+}
+
+.card-content {
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-input {
+  display: flex;
+  margin-left: auto;
+  margin-bottom: .8rem;
+}
+
+.card-input label {
+  padding-right: .8rem;
+  position: relative;
+}
+
+.card-input span {
+  color: red;
+  font-size: 1.1rem;
+  font-weight: 600;
+  position: absolute;
+  right: 0;
+}
+
+.card-input textarea {
+  padding-left: .3rem;
+  width: 20rem;
+  border: 1px solid var(--color-line);
+  margin-left: 0.5rem;
+}
+
+.card-input input {
+  padding-left: .3rem;
+  margin-left: 0.5rem;
+  width: 20rem;
+  border: 1px solid var(--color-line);
+}
+
+.select {
+  padding-left: .3rem;
+  margin-left: 0.5rem;
+  width: 20rem;
+  border: 1px solid var(--color-line);
+}
+
+.card-input input::placeholder {
+  padding-left: .3rem;
+  font-style: italic;
+}
+
+.card-input input.checkbox {
+  margin-left: 0;
+  width: 2rem;
+  margin-right: 18.4rem;
+}
+
+.card-input input.inputSmall {
+  width: 10rem;
+  margin-right: 10rem;
+}
+
+.card-body {
+  border: none;
+  background-color: var(--color-bg);
+}
+
+.buttons {
+  position: relative;
+  padding: .8rem;
+}
+
+.buttons button {
+  cursor: pointer;
+  border: 1px solid var(--color-line);
+  background-color: var(--color-bg);
+  height: 2rem;
+  width: 8rem;
+  margin-right: 1rem;
+  font-weight: 600;
+} 
+
+.buttons button:hover {
+  background-color: white;
+  transition: .3s;
+}
+
+
+.arrow {
+  transform: rotate(180deg);
+}
+
+.arrowDesable {
+  transform: rotate(0deg);
+}
+
+.desable {
+  color: rgb(164, 160, 160);
+}
+
+.card-body .invalido {
+  border: 1px solid red;
+}

@@ -1,0 +1,141 @@
+mat-accordion, mat-expansion-panel-header , mat-expansion-panel, .footer, mat-dialog-container, .content-card, mat-paginator{
+  background-color: var(--color-bg);
+}
+
+mat-panel-title.tituloDaTabela {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+mat-panel-title.tituloDaTabela p {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+mat-panel-title p{
+  margin: 0;
+  background-color: var(--color-bg);
+}
+
+.content {
+  margin-top: 1rem;
+  padding: .2rem .6rem;
+  background-color: var(--color-bg);
+}
+
+.titulo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+.titulo p {
+  font-weight: 600;
+  margin: 0;
+  color: var(--font-color);
+}
+
+.line {
+  margin-left: 12.5rem;
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: var(--color-line);
+}
+
+.input {
+  width: 20rem;
+  padding: 0 1rem;
+}
+
+.card-flex {
+  display: flex;
+  align-items: center;
+}
+
+.card-flex mat-icon {
+  cursor: pointer;
+}
+
+.card-body mat-form-field {
+  background-color: var(--color-bg);
+}
+
+table {
+  width: 100%;
+  background-color: var(--color-bg);
+}
+
+
+th {
+  width:  14.2%;
+  font-weight: 600;
+  font-size: .8rem;
+}
+
+.arrow {
+  transform: rotate(180deg);
+}
+
+.arrowDesable {
+  transform: rotate(0deg);
+}
+
+.mat-column-tempoAtivo {
+  text-align: end;
+}
+
+.mat-column-descricao, .mat-column-sigla, .mat-column-corDeReferencia, .mat-column-tempoAtivo,
+.mat-column-atSocial, .mat-column-editar, .mat-column-excluir {
+  text-align: center;
+}
+
+.modalAtivado {
+  top: 0;
+  background-color: rgba(111, 106, 106, 0.333);
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.modal-content {
+  margin-bottom: 5rem;
+  padding: 1rem 1rem;
+  background-color: white;
+  border-radius: .5rem;
+  width: 20rem;
+  height: 13rem;
+}
+
+.modal-content .buttons{
+  margin-top: 2rem;
+}
+
+.modal-content .buttons button{
+  margin-right: .5rem;
+}
+
+
+.footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.footer button {
+  background-color: rgb(212, 234, 188);
+  margin-top: .4rem;
+  border: 1px solid var(--color-line);
+  height: 3rem;
+}
+
+
+
+

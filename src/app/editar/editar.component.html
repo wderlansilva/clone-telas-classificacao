@@ -1,0 +1,99 @@
+<div class="content">
+
+        <mat-panel-title >
+          <mat-icon>keyboard_arrow_up</mat-icon>
+          <p>Editar classificação</p>
+        </mat-panel-title>
+
+      <div class="card card-body">
+        <div class="card-content" [formGroup]="form">
+
+          <div class="card-input">
+            <label class="desable"> Protocolo: <span>*</span></label>
+            <select class="select desable edit" name="protocolo" formControlName="protocolo" id="protocolo" aria-readonly="true" >
+              <option value="MANCHESTER">MANCHESTER</option>
+              <option value="PROTOCOLO DE CLASSIFICAÇÃO DE RISCO">PROTOCOLO DE CLASSIFICAÇÃO DE RISCO</option>
+              <option value="MANCHESTER_V2_BR">MANCHESTER_V2_BR</option>
+              <option value="MV ROOT">MV ROOT</option>
+            </select>
+          </div>
+          <div class="card-input">
+            <label for="">Cor de referência: <span></span></label>
+            <select class="select" name="corDeReferencia" formControlName="corDeReferencia" id="corDeReferencia">
+              <option value="vermelho">VERMELHO</option>
+              <option value="amarelo">AMARELO</option>
+              <option value="amarelo">VERDE</option>
+            </select>
+          </div>
+  
+          <div class="card-input">
+            <label class="desable" for="">Grupo Discriminador: <span></span></label>
+            <input type="text"  placeholder="Selecione um item" disabled/>
+          </div>
+
+          <div  class="card-input">
+            <label for="">Descrição: <span>*</span></label>
+            <select class="select" formControlName="descricao" id="descricao" name="descricao" [ngClass]=" {'invalido': submit && hasError('descricao')}">
+              <option value="EMERGÊNCIA">EMERGÊNCIA</option>
+              <option value="MORTE">MORTE</option>
+              <option value="MUITO URGENTE">MUITO URGENTE</option>
+              <option value="NÃO URGENTE">NÃO URGENTE</option>
+            </select>
+          </div>
+
+          <div class="card-input">
+            <label for="">Sigla: <span>*</span></label>
+            <select class="select" [ngClass]=" {'invalido': submit && hasError('sigla')} " type="text" formControlName="sigla">
+              <option value="EMER">EMER</option>
+              <option value="N2">N2</option>
+              <option value="N1">N1 </option>
+              <option value="MOR">MOR</option>
+              <option value="M.URG">M.URG</option>
+              <option value="N5">N5</option>
+            </select>
+          </div>
+
+          <div class="card-input">
+            <label for="">Recomendação: <span></span></label>
+            <textarea formControlName="recomendacao" name="recomendacao" id="recomendacao" cols="30" rows="3"></textarea>
+          </div>
+          <div class="card-input">
+            <label for="">Situação incompatível: <span></span></label>
+            <input formControlName="situacaoIncompativel" class="checkbox" type="checkbox" name="situacaoIncompativel" id="situacaoIncompativel" />
+          </div>
+          <div class="card-input">
+            <label class="desable" for="">Escore mínimo: <span></span></label>
+            <input formControlName="escoreMinino" class="inputSmall edit desable" type="number">
+          </div>
+          <div class="card-input">
+            <label class="desable" for="">Escore máximo: <span></span></label>
+            <input formControlName="escoreMaximo" class="inputSmall edit desable" type="number" />
+          </div>
+          <div class="card-input">
+            <label for="">Tempo alvo(min): <span>*</span> </label>
+            <input class="inputSmall" type="number" formControlName="tempoAtivo"/>
+          </div>
+          <div class="card-input">
+            <label for="">Tempo alvo(min) reclassificação: <span></span></label>
+            <input formControlName="tempoAlvo" class="inputSmall" type="number" />
+          </div>
+          <div class="card-input">
+            <label for="">Atendimento do serviço social: <span></span> </label>
+            <input formControlName="atServicoSocial" class="checkbox" type="checkbox" />
+          </div>
+          <div class="card-input">
+            <label for=""
+              >Prioridade sem classificação completa: <span></span></label
+            >
+            <input formControlName="prioridadeSemClassificao" class="checkbox" type="checkbox" />
+          </div>
+        </div>
+          <div class="buttons">
+            
+            <button (click)="onSubmit()">Salvar e voltar</button>
+            <button (click)="clearFormulario()">Limpar fomulário</button>
+            <button routerLink="/">Voltar</button>
+          </div>
+        </div>
+      </div>
+      

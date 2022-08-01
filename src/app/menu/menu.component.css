@@ -1,0 +1,14 @@
+.colorTitle {
+  color: orange;
+}
+
+mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  height: 2.3rem;
+}
+
+.logo {
+  font-weight: 600;
+}
+
