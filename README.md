@@ -1,27 +1,37 @@
-# ProjetoFinalAngular
+# Clone-telas-classificacao
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.4.
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 
-## Development server
+## 📓 Descrição do projeto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Tive o desafio de clonar algumas telas de um projeto um pouco antigo, era possível utilizar tecnologias mais atuais, principalmente no front-end, mas eu quis me desafiar um pouco mais e fazer o mais parecido possível, para isso fiz muitos códigos na "unha".
 
-## Code scaffolding
+## 💻 Tecnologias utilizadas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Json-server
+- Visual Studio Code
+- Postman
+- Angular
+- Angular/Material
 
-## Build
+## 🐧 Como a aplicação funciona?
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+É necessário iniciar um projeto angular para ter acesso as dependências, e após isso iniciar a API fake no diretório raiz do projeto, utilize: json-server --watch classificacao.json para iniciar o json server, depois inicie o angular server com o comando: ng serve ou ng s.
 
-## Running unit tests
+## 😊 Desenvolvedores
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Wderlãn silva
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+
+
+
+
+
+
+
+
